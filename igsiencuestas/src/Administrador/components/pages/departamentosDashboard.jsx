@@ -23,12 +23,9 @@ const DepartamentosDashboard = () => {
   return (
     <div className="departamentos-dashboard">
       <h1>{titulo}</h1>
-<<<<<<< HEAD
       <p>Bienvenido al dashboard de departamentos. Aquí podrás gestionar los departamentos de la aplicación. {nombre}</p>
-=======
       <p>Bienvenido al dashboard de departamentos. Aquí podrás gestionar los departamentos de la aplicación.  
         <strong className={nombre.length <= 5 ? 'verde' : 'rojo' }>{nombre}</strong> </p>
->>>>>>> Administrador
       {
           departamentos.map( (departamento , indice) => {
             return (
@@ -38,12 +35,9 @@ const DepartamentosDashboard = () => {
             );
           })
         }
-<<<<<<< HEAD
         <button onClick={ e => cambiarNombre("Victor")}>Hola</button>
-=======
         <button onClick={ e => cambiarNombre("Victoor")}>Hola</button>
         <input type="text" onChange={e => cambiarNombre(e.target.value)} placeholder="Cambia el nombre" />
->>>>>>> Administrador
     </div>
   );
 }
